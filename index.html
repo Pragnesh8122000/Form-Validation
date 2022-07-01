@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./Styles.css" />
+</head>
+
+<body>
+    <div id="bg">
+        <center></center>
+        <br />
+
+        <b><u>
+                <h1>STUDENT REGISTRATION FORM</h1>
+            </u>
+        </b>
+        <div id="form"> 
+            <form id="form1" method="POST" action="/submit" >
+                <table id="table">
+                    <tr>
+                        <td>FIRST NAME:</td>
+                        <td>
+                            <input id="firstName" type="text" name="firstName" size="30" maxlength="30"
+                                placeholder="Enter first name" />
+                            <span id="firstNameError">(max 30 characters A-Z and a-z)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LAST NAME:</td>
+                        <td>
+                            <input id="lastName" type="text" name="lastName" size="30" maxlength="30"
+                                placeholder="Enter last name" />
+                            <span id="lastNameError">(max 30 characters A-Z and a-z)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DATE OF BIRTH:</td>
+                        <td>
+                            <input id="Day" type="text" name="Day" size="2" maxlength="2" placeholder="Day" min="1"
+                                max="31" /><span id="DayError"></span>
+                            <select id="Month" name="month">
+                                <option name="month" value="month">Month</option>
+                                <option name="month" value="Jan">Jan</option>
+                                <option name="month" value="Feb">Feb</option>
+                                <option name="month" value="Mar">Mar</option>
+                                <option name="month" value="Apr">Apr</option>
+                                <option name="month" value="May">May</option>
+                                <option name="month" value="June">June</option>
+                                <option name="month" value="July">July</option>
+                                <option name="month" value="Aug">Aug</option>
+                                <option name="month" value="Sep">Sep</option>
+                                <option name="month" value="Oct">Oct</option>
+                                <option name="month" value="Nov">Nov</option>
+                                <option name="month" value="Dec">Dec</option>
+                            </select>
+                            <span id="MonthError"></span>
+                            <input id="Year" type="text" name="year" size="4" maxlength='4' placeholder="Year"
+                                min="1991" max="2005" />
+                            <span id="YearError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL ID:</td>
+                        <td>
+                            <input id="email" type="text" name="email" size="30" maxlength="100" /><span
+                                id="emailError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MOBILE NO:</td>
+                        <td>
+                            <input id="mobileNumber" type="number" name="mobileNumber" size="10" maxlength="10"
+                                placeholder="Enter Mobile no" />
+
+                            <span id="mobileNumberError">(10 digits number)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GENDER:</td>
+                        <td>
+                            <input id="female" type="radio" name="gender" value="female" />
+                            <label for="female">Female</label>
+                            <input id="male" type="radio" name="gender" value="male" checked />
+                            <label for="male">Male</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS:</td>
+                        <td>
+                            <input type="text" id="Address" maxlength="30" name="Address" />
+                            <span id="AddressError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CITY:</td>
+                        <td>
+                            <input id="City" type="text" name="City" size="30" maxlength="15"
+                                placeholder="Enter your city name" />
+                            <span id="CityError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PIN CODE:</td>
+                        <td>
+                            <input id="pc" type="text" name="pc" size="30" maxlength="6"
+                                placeholder="Enter pin code" />
+                            <span id="pce">(6 digits number)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STATE:</td>
+                        <td>
+                            <input id="State" type="text" name="State" size="30" maxlength="15"
+                                placeholder="Enter your state name" />
+                            <span id="StateError"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COUNTRY:</td>
+                        <td>
+                            <input id="Country" type="text" name="COUNTRY" size="30" maxlength="15"
+                                placeholder="Enter your city name" />
+                            <span id="CountryError"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>HOBBIES</td>
+                        <td>
+                            <input id="Singing" class="Cursor" type="checkbox" name="HOBBIES" value="Singing" checked />
+                            Singing
+                            <input id="Dancing" class="Cursor" type="checkbox" name="HOBBIES" value="dancing" />
+                            Dancing
+                            <input id="Drawing" class="Cursor" type="checkbox" name="HOBBIES" value="Drawing" />
+                            Drawing
+                            <input id="Sketching" class="Cursor" type="checkbox" name="HOBBIES" value="Sketching" />
+                            Sketching
+                            <br />
+                            <input id="Others" class="Cursor" type="checkbox" />
+                            Others<input id="TextBox" class="Cursor" name="HOBBIES" style="display: none" type="text"
+                                size="30" maxlength="30" placeholder="Enter any other hobby" /><span id="HE"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QUALIFICATION</td>
+                        <td>
+                            <table width="600px" , height="100px">
+                                <tr>
+                                    <th>S.N0</th>
+                                    <th>Examination</th>
+                                    <th>Board</th>
+                                    <th>Percentage</th>
+                                    <th>Year of Passing</th>
+                                </tr>
+                                <tr>
+                                    <td>1.</td>
+                                    <th>Class X</th>
+                                    <td>
+                                        <input id="Board10" type="text" name="class10" size="20" maxlength="20" /><span
+                                            id="BE10"></span>
+                                    </td>
+                                    <td>
+                                        <input id="Percentage10" type="text" name="class10" size="15"
+                                            maxlength="3" /><span id="PE10"></span>
+                                    </td>
+                                    <td>
+                                        <input id="YOP10" type="text" name="class10" size="15" maxlength="4" /><span
+                                            id="YOPE10"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <th>Class XII</th>
+                                    <td>
+                                        <input id="Board12" type="text" name="class12" size="20" maxlength="20" /><span
+                                            id="BE12"></span>
+                                    </td>
+                                    <td>
+                                        <input id="Percentage12" type="text" name="class12" size="15"
+                                            maxlength="3" /><span id="PE12"></span>
+                                    </td>
+                                    <td>
+                                        <input id="YOP12" type="text" name="class12" size="15" maxlength="4" /><span
+                                            id="YOPE12"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <th>Graduation</th>
+                                    <td>
+                                        <input id="BoardG" type="text" name="Graduation" size="20" maxlength="20" /><span
+                                            id="BEG"></span>
+                                    </td>
+                                    <td>
+                                        <input id="PercentageG" type="text" name="Graduation" size="15" maxlength="3" /><span
+                                            id="PEG"></span>
+                                    </td>
+                                    <td>
+                                        <input id="YOPG" type="text" name="Graduation" size="15" maxlength="4" /><span
+                                            id="YOPEG"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <th>Masters</th>
+                                    <td>
+                                        <input id="BoardM" type="text" name="master" size="20" maxlength="20" /><span
+                                            id="BEM"></span>
+                                    </td>
+                                    <td>
+                                        <input id="PercentageM" type="text" name="master" size="15" maxlength="3" /><span
+                                            id="PEM"></span>
+                                    </td>
+                                    <td>
+                                        <input id="YOPM" type="text" name="master" size="15" maxlength="4" /><span
+                                            id="YOPEM"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span>(10 char max)</span></td>
+                                    <td><span>(upto to decimal)</span></td>
+                                    <td>(Min 4 values)</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COURSES:</td>
+                        <td>
+                            <input id="BCA" type="radio" name="COURSES" checked="checked" value="BCA" />
+                            <label for="BCA">BCA</label>
+                            <input id="B.Com" type="radio" name="COURSES" value="B.Com" />
+                            <label for="B.Com">B.Com</label>
+                            <input id="B.Sc" type="radio" name="COURSES" value="B.Sc" />
+                            <label for="B.Sc">B.Sc</label>
+                            <input id="B.A" type="radio" name="COURSES" value="B.A" />
+                            <label for="B.A">B.A</label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset" onclick="myFunction()">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="Validation.js"></script>
+
+</html>
